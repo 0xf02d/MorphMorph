@@ -18,7 +18,7 @@ namespace inher.Classes
         }
         public override string Start()
         {
-            return "you do not start a bike";
+            return "you do not start a bike, anyhow the "+ color+ " "+ Name+ " gets "+ Speed+ "k away whithin an hour, thanks to its "+ gears+ " Gears"  ;
         }
 
     }

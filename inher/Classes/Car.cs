@@ -17,7 +17,7 @@ namespace inher.Classes
 
         public override string Start()
         {
-            return "The car drives away, after an hour it is " + base.Speed + " kilometers away.";
+            return "The " +Manufacturer +" "+ Name+" drives away, after an hour it is " + base.Speed + " kilometers away.";
         }
     }
 }

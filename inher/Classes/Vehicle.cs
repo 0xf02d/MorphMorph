@@ -19,6 +19,7 @@ namespace inher.Classes
         }
         public Vehicle()
         {
+
         }
         public virtual string Start()
         {
