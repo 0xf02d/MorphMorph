@@ -41,6 +41,8 @@ namespace WpfApplication1
             {
                 case "Car":
                 {
+                    
+                   
                     break;
                 }
                 case "Boat":
@@ -54,6 +56,31 @@ namespace WpfApplication1
             }
 
            
+        }
+
+        /*
+                     * <TextBox x:Name="NameBox"  HorizontalAlignment="Left" 
+                     * Grid.Column="1" Grid.Row="0" Height="23" Width="120" Margin="5,5,0,0" 
+                     * TextWrapping="Wrap" Text="{Binding Name, FallbackValue='Name'}" VerticalAlignment="Top" />
+                     */
+
+        private void AddTextBox(string Name)
+        {
+            this.VehicleDefinitionGrid.RowDefinitions.Add(new RowDefinition());
+            TextBox DynamicTextBox = new TextBox();
+            DynamicTextBox.Name = Name;
+            DynamicTextBox.Height = 23;
+            DynamicTextBox.Width = 120;
+            ///TODO: correctMargin
+            //DynamicTextBox.Margin = Margin(5,5,0,0);
+            DynamicTextBox.TextWrapping = TextWrapping.Wrap;
+
+            Binding dynamicTextBoxbinding = new Binding();
+            dynamicTextBoxbinding.Mode = BindingMode.TwoWay;
+            dynamicTextBoxbinding.FallbackValue = Name;
+
+            dynamicTextBoxbinding
+
         }
 
         
